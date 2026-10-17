@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>सावन की कलम (Sawan Ki Kalam) | Official Shayari Portal</title>
+  
+  <!-- Google SEO & Search Console Meta Tags -->
+  <meta name="description" content="सावन की कलम (Sawan Ki Kalam) - हिंदी और देसी हरियाणवी शायरी का आधिकारिक पोर्टल। मोहब्बत, दर्द, तन्हाई, बेवफ़ाई और ख़ुद्दारी पर 100+ मौलिक शायरियाँ।" />
+  <meta name="keywords" content="सावन की कलम, Sawan Ki Kalam, Sawan Shayari, Haryanvi Shayari, Hindi Sad Shayari, Desi Shayari, Sawan Official" />
+  <meta name="author" content="Sawan" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- OpenGraph for WhatsApp / Instagram Link Sharing -->
+  <meta property="og:title" content="सावन की कलम | Sawan Official Shayari Portal" />
+  <meta property="og:description" content="जज़्बात, दर्द और देसी हरियाणवी अंदाज़ — सावन की 100+ बेहतरीन शायरियाँ पढ़ें और शेयर करें।" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --surface: #12151c;
+      --surface-hover: #181c26;
+      --border: #242938;
+      --gold: #d4af37;
+      --gold-soft: rgba(212, 175, 55, 0.14);
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --accent: #e11d48;
+    }
+
+    [data-theme="light"] {
+      --bg: #faf7f2;
+      --surface: #ffffff;
+      --surface-hover: #f5efe6;
+      --border: #e5dec9;
+      --gold: #9a6f0a;
+      --gold-soft: rgba(154, 111, 10, 0.12);
+      --text: #1c1917;
+      --muted: #57534e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Serif Devanagari', sans-serif;
+      line-height: 1.7;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 12, 16, 0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    [data-theme="light"] header {
+      background: rgba(250, 247, 242, 0.92);
+    }
+
+    .nav-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #d4af37, #8a640f);
+      color: #000;
+      font-weight: 800;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, serif;
+    }
+
+    .brand-title {
+      font-family: Georgia, 'Noto Serif Devanagari', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .brand-sub {
+      font-size: 0.72rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      display: block;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-outline {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .hero {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 48px 20px 30px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 50px;
+      background: var(--gold-soft);
+      color: var(--gold);
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .hero h1 {
+      font-family: Georgia, 'Noto Serif Devanagari', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto 24px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      text-align: center;
+    }
+
+    .stat-num {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .author-strip {
+      max-width: 1180px;
+      margin: 24px auto 0;
+      padding: 0 20px;
+    }
+
+    .author-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .author-info h3 {
+      font-size: 1.15rem;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .author-info p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .controls-section {
+      max-width: 1180px;
+      margin: 26px auto 18px;
+      padding: 0 20px;
+    }
+
+    .search-box {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 14px 18px;
+      border-radius: 12px;
+      font-size: 0.98rem;
+      outline: none;
+      margin-bottom: 16px;
+      transition: border 0.2s;
+    }
+
+    .search-box:focus {
+      border-color: var(--gold);
+    }
+
+    .category-tabs {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      scrollbar-width: none;
+    }
+
+    .cat-btn {
+      background: var(--surface);
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: 0.2s;
+    }
+
+    .cat-btn.active, .cat-btn:hover {
+      background: var(--gold);
+      color: #000;
+      border-color: var(--gold);
+      font-weight: 600;
+    }
+
+    .main-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 10px 20px 50px;
+    }
+
+    .shayari-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 20px;
+    }
+
+    .shayari-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 22px 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+      position: relative;
+    }
+
+    .shayari-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(212, 175, 55, 0.5);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .cat-tag {
+      font-size: 0.74rem;
+      padding: 3px 10px;
+      border-radius: 4px;
+      background: var(--gold-soft);
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    .serial-no {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: monospace;
+    }
+
+    .shayari-text {
+      font-family: Georgia, 'Noto Serif Devanagari', serif;
+      font-size: 1.15rem;
+      line-height: 1.85;
+      white-space: pre-line;
+      margin-bottom: 18px;
+      color: var(--text);
+    }
+
+    .signature {
+      font-size: 0.82rem;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .card-footer {
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .action-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    .icon-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 5px 11px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .icon-btn:hover {
+      border-color: var(--gold);
+      color: var(--text);
+    }
+
+    .icon-btn.liked {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .delete-btn {
+      background: rgba(225, 29, 72, 0.15);
+      color: #f43f5e;
+      border: 1px solid #f43f5e;
+      padding: 4px 9px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+
+    .load-more-wrap {
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #000;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn-gold:hover {
+      opacity: 0.9;
+    }
+
+    #adminPanel {
+      display: none;
+      max-width: 1180px;
+      margin: 24px auto;
+      padding: 0 20px;
+    }
+
+    .admin-box {
+      background: var(--surface);
+      border: 2px solid var(--gold);
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .admin-box h3 {
+      color: var(--gold);
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 12px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      font-family: inherit;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--gold);
+      color: #000;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      display: none;
+      z-index: 999;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-logo">सा</div>
+        <div>
+          <span class="brand-title">सावन की कलम</span>
+          <span class="brand-sub">Official Shayari Archive</span>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <button class="btn-outline" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+        <button class="btn-outline" onclick="handleAdminAccess()" id="adminToggleBtn">🔒 Admin</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="verified-badge">✓ आधिकारिक साहित्य एवं शायरी पोर्टल</div>
+    <h1>जज़्बात जो सीधे <span>रूह को छू जाएँ</span></h1>
+    <p>सावन के मौलिक अल्फ़ाज़ — देसी हरियाणवी तेवर, मोहब्बत की कसक, अधूरे ख्वाब और ज़िंदगी की हकीकत पर 100+ चुनिंदा शायरियाँ।</p>
+    <div class="stats-bar">
+      <div class="stat-box">
+        <div class="stat-num" id="totalShayariCount">105</div>
+        <div class="stat-label">कुल शायरियाँ</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" id="totalLikesCount">4,820+</div>
+        <div class="stat-label">पाठकों का प्यार</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">6</div>
+        <div class="stat-label">प्रमुख श्रेणियाँ</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="author-strip">
+    <div class="author-card">
+      <div class="author-info">
+        <h3>✒️ सावन (Sawan) <span style="font-size:0.78rem; color:var(--gold); font-weight:500;">• लेखक एवं शायर (हरियाणा)</span></h3>
+        <p>"लिखने पर आऊँ तो किताब लिख दूँ..." — दिल के सच्चे जज़्बात और देसी हरियाणवी अंदाज़ को काग़ज़ पर उतारने का एक छोटा सा सफ़र।</p>
+      </div>
+      <div>
+        <button class="btn-outline" onclick="shareWebsite()">🔗 वेबसाइट लिंक शेयर करें</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="adminPanel">
+    <div class="admin-box">
+      <h3>
+        <span>👑 सावन एडमिन स्टूडियो (सिर्फ आपके नियंत्रण में)</span>
+        <button class="btn-outline" onclick="logoutAdmin()">लॉगआउट 🔒</button>
+      </h3>
+      <div class="form-grid">
+        <select id="newCategory" class="input-field">
+          <option value="विशेष">विशेष (Sawan Special)</option>
+          <option value="देसी हरियाणवी">देसी हरियाणवी</option>
+          <option value="दर्द और तन्हाई">दर्द और तन्हाई</option>
+          <option value="मोहब्बत">मोहब्बत</option>
+          <option value="बेवफ़ाई">बेवफ़ाई</option>
+          <option value="ख़ुद्दारी और रुतबा">ख़ुद्दारी और रुतबा</option>
+        </select>
+        <textarea id="newShayariText" rows="4" class="input-field" placeholder="यहाँ अपनी नई शायरी लिखें..."></textarea>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn-gold" onclick="addShayariByAdmin()">+ वेबसाइट में शायरी पब्लिश करें</button>
+          <button class="btn-outline" onclick="exportUpdatedHTML()">💾 अपडेटेड वेबसाइट फाइल डाउनलोड करें</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="controls-section">
+    <input type="text" id="searchInput" class="search-box" placeholder="🔍 किसी भी शब्द से शायरी खोजें (जैसे: किताब, छोरे नै, दर्द, मोहब्बत, वक्त)..." oninput="resetAndRender()" />
+    <div class="category-tabs" id="categoryTabs">
+      <button class="cat-btn active" onclick="selectCategory('सभी', this)">सभी (All)</button>
+      <button class="cat-btn" onclick="selectCategory('विशेष', this)">⭐ सावन विशेष</button>
+      <button class="cat-btn" onclick="selectCategory('देसी हरियाणवी', this)">🔥 देसी हरियाणवी</button>
+      <button class="cat-btn" onclick="selectCategory('दर्द और तन्हाई', this)">💔 दर्द और तन्हाई</button>
+      <button class="cat-btn" onclick="selectCategory('मोहब्बत', this)">❤️ मोहब्बत</button>
+      <button class="cat-btn" onclick="selectCategory('बेवफ़ाई', this)">🥀 बेवफ़ाई</button>
+      <button class="cat-btn" onclick="selectCategory('ख़ुद्दारी और रुतबा', this)">👑 ख़ुद्दारी और रुतबा</button>
+    </div>
+  </section>
+
+  <main class="main-container">
+    <div class="shayari-grid" id="shayariGrid"></div>
+    <div class="load-more-wrap" id="loadMoreWrap">
+      <button class="btn-gold" onclick="loadMore()">और शायरियाँ पढ़ें (Load More) ↓</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 <strong>सावन की कलम (Sawan Ki Kalam)</strong> | सर्वाधिकार सुरक्षित।</p>
+    <p style="margin-top:6px; font-size:0.78rem;">यह पोर्टल केवल पढ़ने और शेयर करने के लिए है। नई रचनाएँ केवल लेखक (Sawan) द्वारा जोड़ी जा सकती हैं।</p>
+  </footer>
+
+  <div id="toast">कॉपी हो गया!</div>
+
+  <script>
+    const defaultShayaris = [
+      { id: 1, cat: "विशेष", likes: 142, text: "लिखने पर आऊँ तो मैं तुझ पर पूरी किताब लिख दूँ,\nतेरे दिए हर एक ज़ख्म का बेबाक हिसाब लिख दूँ।" },
+      { id: 2, cat: "विशेष", likes: 128, text: "उसने सोचा टूट गया होगा वो सावन अब तक,\nउसे क्या पता इस छोरे नै दर्द को ही अपनी ताकत बना लिया।" },
+      { id: 3, cat: "विशेष", likes: 119, text: "डेढ़ साल बाद देखा उसे किसी और की दुनिया में खुश,\nहम मुस्कुराकर लौट आए, मोहब्बत में शिकायत कैसी।" },
+      { id: 4, cat: "विशेष", likes: 98, text: "मैं तेरे बारे में किसी से बुरा नी कहने की कसम खा बैठा हूँ,\nवरना तेरी बेवफ़ाई के किस्से तो शहर भर को रुला देते।" },
+      { id: 5, cat: "विशेष", likes: 112, text: "क्या मोहब्बत का इज़हार हर बार लफ़्ज़ों में करना ज़रूरी है?\nकभी मेरी खामोश आँखों में भी अपना नाम पढ़ लिया कर।" },
+      { id: 6, cat: "विशेष", likes: 94, text: "ख़ूबसूरत हो जाती थी वो हर एक सुबह मेरी,\nजब बिना मांगे तेरी एक प्यारी सी याद आ जाती थी।" },
+      { id: 7, cat: "विशेष", likes: 105, text: "काग़ज़ और कलम से अब मेरी पक्की यारी हो गई है,\nजब से तेरी यादें इस दिल पर भारी हो गई हैं।" },
+      { id: 8, cat: "विशेष", likes: 89, text: "सावन की बरसात तो बस मौसम के साथ आती है,\nमेरे दिल की उदासी तो अब बारह महीने साथ रहती है।" },
+      { id: 9, cat: "विशेष", likes: 115, text: "तन्हाई में बैठकर जब भी खुद से बात करता हूँ,\nपता नहीं क्यों हर सवाल के जवाब में तेरा ही ज़िक्र आता है।" },
+      { id: 10, cat: "विशेष", likes: 101, text: "इंसान का सबसे बड़ा दुश्मन उसका बेकाबू मन होता है,\nजो उसे वहाँ ले जाता है जहाँ उसकी कोई कदर नहीं होती।" },
+      { id: 11, cat: "देसी हरियाणवी", likes: 134, text: "इस सीधे-सादे छोरे नै इतना भी कमज़ोर मत समझिए बावली,\nदिल टूटा है, हौसला आज भी पहाड़ बरगा है।" },
+      { id: 12, cat: "देसी हरियाणवी", likes: 121, text: "धोखा देण आळी तो बदलगी अपना रास्ता,\nपर इस छोरे नै आज भी यारी और वफ़ा निभानी आवै है।" },
+      { id: 13, cat: "देसी हरियाणवी", likes: 96, text: "म्हारे हरियाणे में बात जुबान की होया करै,\nकाग़ज़ी वादे तो शहर के नकली लोग करया करैं।" },
+      { id: 14, cat: "देसी हरियाणवी", likes: 108, text: "जिस छोरे नै तू आम समझकै छोड़गी थी,\nआज उसके लिखे लफ़्ज़ लोग स्टेटस पै लगाया करैं।" },
+      { id: 15, cat: "देसी हरियाणवी", likes: 88, text: "शक्ल पै मत जाइये मैडम, देसी ज़रूर हां,\nपर दिल में खोट और यारां गेल्यां धोखा कदे कोनी करया।" },
+      { id: 16, cat: "देसी हरियाणवी", likes: 92, text: "वक्त बदलण दे लाडले, जो आज मुँह फेर कै चालैं हैं,\nवे खुद आकर राम-राम करैंगे।" },
+      { id: 17, cat: "देसी हरियाणवी", likes: 104, text: "छोरे नै शौक कोनी था शायर बणन का,\nबस तेरी कुछ अधूरी बातां नै कलम पकड़ा दी।" },
+      { id: 18, cat: "देसी हरियाणवी", likes: 79, text: "हम तै दिल के साफ थे, इस करके हार गए,\nदिमाग ते खेलण आळे बाज़ी मार गए।" },
+      { id: 19, cat: "देसी हरियाणवी", likes: 86, text: "रुतबा तो म्हारा कल भी था अर आज भी रवैगा,\nएक तेरे बदल जाण तै इस छोरे नै कोई फर्क कोनी पड़ता।" },
+      { id: 20, cat: "देसी हरियाणवी", likes: 95, text: "दुनियादारी की समझ थोड़ी लेट आई मने,\nपर जितनी आई, घणो के नकाब उतारगी।" },
+      { id: 21, cat: "देसी हरियाणवी", likes: 83, text: "इस छोरे नै तेरी हर गलती माफ करी थी,\nअर तनै इसे बात का नाजायज़ फायदा उठा लिया।" },
+      { id: 22, cat: "देसी हरियाणवी", likes: 91, text: "माँ के संस्कार और बापू की इज्ज़त बांध राखी है,\nना तै जवाब देण में हम भी किसे तै कम कोनी।" },
+      { id: 23, cat: "देसी हरियाणवी", likes: 77, text: "पीसै का घमंड उननै होया करै जिननै नया देख्या हो,\nहम तै यारां की महफ़िल नै ही अपनी दौलत मान्या करां।" },
+      { id: 24, cat: "देसी हरियाणवी", likes: 84, text: "छोरे नै चुप रहणा सीख लिया है अब,\nक्योंकि समझण आळे रहे कोनी अर नासमझ नै समझाणा बेकार है।" },
+      { id: 25, cat: "देसी हरियाणवी", likes: 110, text: "पाणीपत की माटी का असर है मैडम,\nअकड़ तो राखां कोनी, पर स्वाभिमान पै आंच भी कोनी आण देते।" },
+      { id: 26, cat: "देसी हरियाणवी", likes: 72, text: "तेरी मीठी बातां के चक्कर में आपणा चैन खो बैठे,\nभले चंगे हांडै थे, बेमात की टेंशन मोल ले बैठे।" },
+      { id: 27, cat: "देसी हरियाणवी", likes: 80, text: "छोरे नै नफरत कोनी करी कदे तोहे तै,\nबस अब भरोसा करण की हिम्मत खत्म होगी।" },
+      { id: 28, cat: "देसी हरियाणवी", likes: 89, text: "म्हारी खामोशी नै म्हारी कमज़ोरी मत मानियो,\nतूफान आण तै पहले भी मौसम शांत होया करै।" },
+      { id: 29, cat: "दर्द और तन्हाई", likes: 97, text: "कुछ ज़ख्म ऐसे होते हैं जो कभी दिखते नहीं,\nमगर रात की खामोशी में बहुत ज़ोर से दुखते हैं।" },
+      { id: 30, cat: "दर्द और तन्हाई", likes: 85, text: "हँसता हुआ चेहरा देखकर सबने कहा खुशकिस्मत हो,\nकिसी ने ये न पूछा कि इस मुस्कान के पीछे कितने आँसू छिपे हैं।" },
+      { id: 31, cat: "दर्द और तन्हाई", likes: 78, text: "अब किसी से कोई गिला नहीं रहा मुझे,\nजब अपने ही न समझे तो गैरों से क्या उम्मीद रखें।" },
+      { id: 32, cat: "दर्द और तन्हाई", likes: 90, text: "एक उम्र गुज़ार दी हमने जिनकी फिक्र में,\nउन्हें एक पल भी न लगा हमें परायों की कतार में खड़ा करने में।" },
+      { id: 33, cat: "दर्द और तन्हाई", likes: 68, text: "नींद भी अब सौदेबाज़ी करने लगी है मुझसे,\nकहती है पहले उसकी यादों को सुलाओ फिर मैं आऊँगी।" },
+      { id: 34, cat: "दर्द और तन्हाई", likes: 74, text: "भीड़ में रहकर भी जो इंसान अकेला हो जाए,\nसमझ लेना उसने किसी अपने को बहुत करीब से बदलते देखा है।" },
+      { id: 35, cat: "दर्द और तन्हाई", likes: 82, text: "कितना अजीब है न ये दिल का दर्द भी,\nलिखो तो लोग वाह-वाह करते हैं और सहो तो जान निकलती है।" },
+      { id: 36, cat: "दर्द और तन्हाई", likes: 66, text: "हमने तो बस थोड़ा सा वक्त माँगा था तुझसे,\nतूने तो पूरी ज़िंदगी भर का इंतज़ार दे दिया।" },
+      { id: 37, cat: "दर्द और तन्हाई", likes: 71, text: "कभी-कभी इंसान रोता नहीं है,\nबस अंदर ही अंदर इतना खामोश हो जाता है कि शोर भी सुनाई नहीं देता।" },
+      { id: 38, cat: "दर्द और तन्हाई", likes: 87, text: "टूटे हुए काँच की तरह हो गई हैं उम्मीदें मेरी,\nसमेटने की कोशिश करता हूँ तो खुद के ही हाथ ज़ख्मी हो जाते हैं।" },
+      { id: 39, cat: "दर्द और तन्हाई", likes: 64, text: "वो पूछते हैं आजकल शायरी में इतना दर्द क्यों है,\nअब उन्हें कैसे बताऊँ कि दवा देने वाले ही मर्ज़ दे गए।" },
+      { id: 40, cat: "दर्द और तन्हाई", likes: 76, text: "रात भर जागते हैं सिर्फ इस ख्याल से,\nकि शायद तुझे भी कभी मेरी तरह बेचैनी होती होगी।" },
+      { id: 41, cat: "दर्द और तन्हाई", likes: 69, text: "छूट गया जो हाथ, उसका मलाल आज भी है,\nमैं कहाँ गलत था, बस यही एक सवाल आज भी है।" },
+      { id: 42, cat: "दर्द और तन्हाई", likes: 81, text: "सन्नाटा बहुत है मेरे कमरे की दीवारों में,\nजब से तेरी आवाज़ ने यहाँ आना बंद किया है।" },
+      { id: 43, cat: "दर्द और तन्हाई", likes: 73, text: "थक गया हूँ हर किसी को अपनी सफाई देते-देते,\nअब जो जैसा सोचे मेरे बारे में, उसका भला हो।" },
+      { id: 44, cat: "दर्द और तन्हाई", likes: 93, text: "यूँ ही नहीं लिखता सावन हर पन्ने पर ग़म के किस्से,\nकुछ पन्ने ज़िंदगी ने बिना पूछे ही जला दिए।" },
+      { id: 45, cat: "दर्द और तन्हाई", likes: 62, text: "बचपन ही अच्छा था जब खिलौने टूटने पर रोते थे,\nअब तो दिल टूटने पर भी मुस्कुराना पड़ता है।" },
+      { id: 46, cat: "दर्द और तन्हाई", likes: 75, text: "कोई मिला ही नहीं ऐसा जो बिन कहे समझ सके,\nहर किसी ने बस अपने मतलब के हिसाब से परखा मुझे।" },
+      { id: 47, cat: "दर्द और तन्हाई", likes: 67, text: "यादों की एक पुरानी संदूक रखी है दिल में,\nजब भी खोलता हूँ, आँखें नम हो जाती हैं।" },
+      { id: 48, cat: "दर्द और तन्हाई", likes: 79, text: "सब कुछ पा लिया ज़िंदगी की दौड़ में,\nबस वो सुकून खो गया जो तेरे साथ बैठने से मिलता था।" },
+      { id: 49, cat: "मोहब्बत", likes: 103, text: "मोहब्बत का कोई हिसाब नहीं होता साहिब,\nये वो इबादत है जो एकतरफ़ा भी पूरी शिद्दत से निभाई जाती है।" },
+      { id: 50, cat: "मोहब्बत", likes: 94, text: "हज़ारों चेहरे देखे इस दुनिया की भीड़ में,\nमगर दिल जाकर रुका तो सिर्फ तेरी सादगी पर।" },
+      { id: 51, cat: "मोहब्बत", likes: 88, text: "तू मिले या न मिले ये तो मुकद्दर की बात है,\nमगर तुझे चाहना मेरी ज़िंदगी का सबसे खूबसूरत इत्तेफ़ाक है।" },
+      { id: 52, cat: "मोहब्बत", likes: 76, text: "तेरी एक झलक पाने को तरस जाती हैं निगाहें,\nपता नहीं कौन सा जादू है तेरी उन मासूम अदाओं में।" },
+      { id: 53, cat: "मोहब्बत", likes: 82, text: "दुआओं में जब भी हाथ उठते हैं मेरे,\nमेरी ख्वाहिशों से पहले तेरी सलामती का नाम आता है।" },
+      { id: 54, cat: "मोहब्बत", likes: 71, text: "बहुत शोर था मेरे दिल के भीतर,\nतेरे एक 'अपना ख्याल रखना' कहने से सब शांत हो गया।" },
+      { id: 55, cat: "मोहब्बत", likes: 89, text: "चाँद में भी दाग़ दिखता है ज़माने को,\nमगर मुझे तो तेरी हर कमी से भी मोहब्बत है।" },
+      { id: 56, cat: "मोहब्बत", likes: 68, text: "फासले चाहे कितने भी बढ़ जाएँ हमारे दरमियान,\nमेरे दिल के एक कोने में हमेशा तेरा ही हक रहेगा।" },
+      { id: 57, cat: "मोहब्बत", likes: 74, text: "इश्क़ अगर सच्चा हो तो वक्त का मोहताज नहीं होता,\nसालों बाद भी नाम सुनते ही धड़कनें तेज़ हो जाती हैं।" },
+      { id: 58, cat: "मोहब्बत", likes: 91, text: "मैं शायर तो नहीं था तेरे मिलने से पहले,\nये तो तेरी निगाहों ने मुझे लफ़्ज़ों से खेलना सिखा दिया।" },
+      { id: 59, cat: "मोहब्बत", likes: 63, text: "कुछ रिश्ते बिना किसी नाम के भी बहुत खास होते हैं,\nजो पास न होकर भी हर पल दिल के पास होते हैं।" },
+      { id: 60, cat: "मोहब्बत", likes: 77, text: "तेरे नाम से शुरू होती थी मेरी हर कहानी,\nऔर आज भी हर पन्ने के आखिर में तेरा ही ज़िक्र छूट जाता है।" },
+      { id: 61, cat: "मोहब्बत", likes: 84, text: "उम्र भर का साथ न सही, वो चंद मुलाकातों के पल ही काफी हैं,\nसावन को अपनी पूरी ज़िंदगी गुज़ारने के लिए।" },
+      { id: 62, cat: "मोहब्बत", likes: 69, text: "किसी को पा लेना ही मोहब्बत नहीं होती,\nकिसी की खुशी के लिए पीछे हट जाना भी इश्क़ का दर्जा रखता है।" },
+      { id: 63, cat: "मोहब्बत", likes: 72, text: "जब भी हवा का कोई ठंडा झोंका छूकर गुज़रता है,\nऐसा लगता है जैसे तूने दूर से मेरा हाल पूछा हो।" },
+      { id: 64, cat: "मोहब्बत", likes: 86, text: "तेरी हँसी आज भी मेरी सबसे पसंदीदा धुन है,\nफिर चाहे वो अब किसी और के लिए ही क्यों न हो।" },
+      { id: 65, cat: "मोहब्बत", likes: 70, text: "काग़ज़ की कश्ती सा था मेरा दिल,\nतेरी मोहब्बत के समंदर में डूबकर भी आबाद हो गया।" },
+      { id: 66, cat: "मोहब्बत", likes: 65, text: "न कोई शर्त थी, न कोई उम्मीद रखी थी,\nहमने तो बस तुझसे बेपनाह मोहब्बत की थी।" },
+      { id: 67, cat: "बेवफ़ाई", likes: 99, text: "वादे तो सात जन्मों के किए थे उसने,\nमगर निभाने की बारी आई तो एक मौसम भी साथ न चल सकी।" },
+      { id: 68, cat: "बेवफ़ाई", likes: 91, text: "कितनी आसानी से कह दिया उसने कि अब भूल जाओ मुझे,\nजैसे इतने सालों का रिश्ता कोई रेत का घर था।" },
+      { id: 69, cat: "बेवफ़ाई", likes: 84, text: "कसूर उसका नहीं था जो वो बदल गई,\nकसूर मेरा था जो मैंने उसे खुद से ज़्यादा चाह लिया।" },
+      { id: 70, cat: "बेवफ़ाई", likes: 77, text: "जब नया हमसफ़र मिल जाता है लोगों को,\nतो पुराने की वफ़ाएँ भी बोझ लगने लगती हैं।" },
+      { id: 71, cat: "बेवफ़ाई", likes: 88, text: "झूठी कसमें खाने का हुनर कोई तुझसे सीखे,\nहम तो आज भी तेरे झूठ को सच मानकर बैठे हैं।" },
+      { id: 72, cat: "बेवफ़ाई", likes: 73, text: "मजबूरी का नाम देकर उसने अपना दामन तो बचा लिया,\nमगर मेरे भरोसे को हमेशा के लिए मार दिया।" },
+      { id: 73, cat: "बेवफ़ाई", likes: 80, text: "बदलना तो फितरत होती है मौसम की,\nहमें क्या पता था कि इंसान भी मौसम से तेज़ रंग बदलते हैं।" },
+      { id: 74, cat: "बेवफ़ाई", likes: 69, text: "हम वफ़ा की उम्मीद भी किससे कर बैठे,\nजिसे अपने वादों की ही कोई कीमत पता नहीं थी।" },
+      { id: 75, cat: "बेवफ़ाई", likes: 95, text: "जा तुझे आज़ाद किया अपनी हर एक याद से,\nपर जब कोई तेरा दिल तोड़ेगा तो तुझे सावन ज़रूर याद आएगा।" },
+      { id: 76, cat: "बेवफ़ाई", likes: 74, text: "अजनबी बनकर मिले थे और अजनबी ही बना गए,\nबीच के कुछ साल बस एक खूबसूरत धोखा थे।" },
+      { id: 77, cat: "बेवफ़ाई", likes: 83, text: "तेरे शहर से गुज़रे तो कदम खुद-ब-खुद रुक गए,\nजहाँ कभी वफ़ा के वादे हुए थे, वहाँ आज बेरुखी का पहरा था।" },
+      { id: 78, cat: "बेवफ़ाई", likes: 67, text: "दिल तोड़ने वालों को कभी नींद की कमी नहीं होती,\nजागते तो वो हैं जिन्होंने सच में किसी को अपना माना हो।" },
+      { id: 79, cat: "बेवफ़ाई", likes: 71, text: "मेरी वफ़ाओं का क्या खूब सिला दिया तूने,\nभरी महफ़िल में मुझे ही गुनहगार बता दिया तूने।" },
+      { id: 80, cat: "बेवफ़ाई", likes: 86, text: "अब अगर लौटकर भी आए वो तो दरवाज़ा बंद मिलेगा,\nक्योंकि इज़्ज़त और भरोसा दोबारा भीख में नहीं मिलते।" },
+      { id: 81, cat: "बेवफ़ाई", likes: 72, text: "मोहब्बत का खेल तो दोनों ने शुरू किया था,\nफर्क बस इतना रहा कि तूने खेला और मैंने निभाया।" },
+      { id: 82, cat: "बेवफ़ाई", likes: 65, text: "चलो अच्छा हुआ तेरा असली चेहरा वक्त रहते दिख गया,\nवरना हम तो तेरे लिए पूरी दुनिया से लड़ने चले थे।" },
+      { id: 83, cat: "बेवफ़ाई", likes: 78, text: "रोया नहीं हूँ मैं तेरे जाने के बाद,\nबस किसी पर दोबारा यकीन करने की आदत छोड़ दी है।" },
+      { id: 84, cat: "बेवफ़ाई", likes: 81, text: "तेरी बेवफ़ाई ने एक बड़ा एहसान किया मुझ पर,\nमुझे खुद से प्यार करना और अकेले जीना सिखा दिया।" },
+      { id: 85, cat: "ख़ुद्दारी और रुतबा", likes: 118, text: "झुकता वहीं हूँ जहाँ रिश्तों में अपनापन हो,\nवरना ज़िद और रुतबे में तो हम आज भी लाजवाब हैं।" },
+      { id: 86, cat: "ख़ुद्दारी और रुतबा", likes: 104, text: "रास्ते मुश्किल हैं तो क्या हुआ मंज़िल ज़रूर मिलेगी,\nमेहनत मेरी खामोश है, पर कामयाबी शोर मचाएगी।" },
+      { id: 87, cat: "ख़ुद्दारी और रुतबा", likes: 92, text: "अपनी कहानी का लेखक मैं खुद हूँ,\nकौन कब तक साथ रहेगा, ये फैसला अब वक्त नहीं मैं करूँगा।" },
+      { id: 88, cat: "ख़ुद्दारी और रुतबा", likes: 87, text: "हम समंदर हैं, हमें खामोश ही रहने दो,\nज़रा सा मचल गए तो शहर भर में तूफान आ जाएगा।" },
+      { id: 89, cat: "ख़ुद्दारी और रुतबा", likes: 96, text: "हीरे की परख जौहरी को ही होती है जनाब,\nकोयले के बाज़ार में अक्सर कीमत कम ही लगाई जाती है।" },
+      { id: 90, cat: "ख़ुद्दारी और रुतबा", likes: 79, text: "किसी के पैरों में गिरकर कामयाबी पाने से बेहतर है,\nअपने पैरों पर चलकर अपनी पहचान खुद बनाई जाए।" },
+      { id: 91, cat: "ख़ुद्दारी और रुतबा", likes: 85, text: "मेरा वक्त बुरा हो सकता है, पर मेरा हौसला नहीं,\nराख से फिर उठकर चमकने का हुनर रखता हूँ मैं।" },
+      { id: 92, cat: "ख़ुद्दारी और रुतबा", likes: 91, text: "लोगों की बातों पर ध्यान देना छोड़ दिया मैंने,\nक्योंकि लोग तो भगवान में भी कमियाँ निकाल देते हैं।" },
+      { id: 93, cat: "ख़ुद्दारी और रुतबा", likes: 74, text: "कम बोलता हूँ इसका मतलब ये नहीं कि जवाब नहीं है,\nबस कुछ लोगों के स्तर तक गिरना मेरी फितरत में नहीं है।" },
+      { id: 94, cat: "ख़ुद्दारी और रुतबा", likes: 83, text: "दोस्ती हो या दुश्मनी, दोनों हिसाब से निभाता हूँ,\nजो दिल में उतर जाए उसे सिर आँखों पर, जो नज़र से उतर जाए उसे भाड़ में।" },
+      { id: 95, cat: "ख़ुद्दारी और रुतबा", likes: 89, text: "ना किसी से जलन है, ना किसी से होड़ है,\nमेरी अपनी मंज़िल है और मेरी अपनी दौड़ है।" },
+      { id: 96, cat: "ख़ुद्दारी और रुतबा", likes: 77, text: "ठोकरें खाकर ही इंसान संभलना सीखता है,\nबिना तपे तो सोना भी कुंदन नहीं बनता।" },
+      { id: 97, cat: "ख़ुद्दारी और रुतबा", likes: 81, text: "इज्ज़त दोगे तो दोगुनी वापस मिलेगी,\nऔर अगर अकड़ दिखाओगे तो सावन किसी का कर्ज़दार नहीं है।" },
+      { id: 98, cat: "ख़ुद्दारी और रुतबा", likes: 94, text: "भीड़ का हिस्सा बनना मुझे शुरू से नापसंद है,\nअकेला चलूँगा पर अपने दम पर इतिहास रचूँगा।" },
+      { id: 99, cat: "ख़ुद्दारी और रुतबा", likes: 73, text: "जो खो गया उसका अफसोस क्या करना,\nजो आने वाला कल है उसे अपने नाम करके दिखाएँगे।" },
+      { id: 100, cat: "ख़ुद्दारी और रुतबा", likes: 88, text: "मेरी सादगी ही मेरा सबसे बड़ा गहना है,\nदिखावे की दुनिया से मुझे हमेशा दूर ही रहना है।" },
+      { id: 101, cat: "ख़ुद्दारी और रुतबा", likes: 90, text: "कलम भी मेरी है और जज़्बात भी मेरे हैं,\nसावन किसी की नकल नहीं, अपनी असलियत लिखता है।" },
+      { id: 102, cat: "ख़ुद्दारी और रुतबा", likes: 84, text: "हार तब नहीं होती जब आप गिर जाते हैं,\nहार तब होती है जब आप उठने से इनकार कर देते हैं।" },
+      { id: 103, cat: "ख़ुद्दारी और रुतबा", likes: 97, text: "वक्त सबका आता है बस सब्र रखना पड़ता है,\nकोहरा चाहे जितना घना हो, सूरज को निकलना ही पड़ता है।" },
+      { id: 104, cat: "ख़ुद्दारी और रुतबा", likes: 102, text: "नाम छोटा है मगर इरादे आसमान जितने ऊँचे हैं,\nये सावन की कलम है जनाब, यहाँ लफ़्ज़ भी तीर की तरह चलते हैं।" },
+      { id: 105, cat: "विशेष", likes: 156, text: "पढ़ने वाले तो हज़ारों मिलेंगे इस ज़माने में,\nपर जो मेरे लफ़्ज़ों के पीछे की खामोशी समझे, वो कोई एक ही होगा।" }
+    ];
+
+    const STORAGE_KEY = "sawan_official_shayaris_v2";
+    const ADMIN_PASS = "sawan07";
+
+    let shayariList = JSON.parse(localStorage.getItem(STORAGE_KEY)) || defaultShayaris;
+    let currentCategory = "सभी";
+    let visibleCount = 18;
+    let isAdmin = false;
+
+    function saveToStorage() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(shayariList));
+      document.getElementById("totalShayariCount").innerText = shayariList.length;
+    }
+
+    function getFilteredShayaris() {
+      const q = document.getElementById("searchInput").value.trim().toLowerCase();
+      return shayariList.filter(item => {
+        const matchCat = currentCategory === "सभी" || item.cat === currentCategory;
+        const matchQuery = !q || item.text.toLowerCase().includes(q) || item.cat.toLowerCase().includes(q);
+        return matchCat && matchQuery;
+      });
+    }
+
+    function renderShayaris() {
+      const grid = document.getElementById("shayariGrid");
+      const filtered = getFilteredShayaris();
+      const slice = filtered.slice(0, visibleCount);
+
+      document.getElementById("totalShayariCount").innerText = shayariList.length;
+
+      if (slice.length === 0) {
+        grid.innerHTML = `<p style="grid-column:1/-1; text-align:center; color:var(--muted); padding:40px;">कोई शायरी नहीं मिली। कृपया दूसरा शब्द खोजें।</p>`;
+        document.getElementById("loadMoreWrap").style.display = "none";
+        return;
+      }
+
+      grid.innerHTML = slice.map((item, idx) => `
+        <article class="shayari-card">
+          <div>
+            <div class="card-top">
+              <span class="cat-tag">${item.cat}</span>
+              <span class="serial-no">#${item.id}</span>
+            </div>
+            <div class="shayari-text">${item.text}</div>
+          </div>
+          <div>
+            <div class="signature">— सावन की कलम से ✍️</div>
+            <div class="card-footer">
+              <div class="action-group">
+                <button class="icon-btn" onclick="likeShayari(${item.id}, this)">❤️ <span>${item.likes}</span></button>
+                <button class="icon-btn" onclick="copyShayari(\`${item.text.replace(/`/g, '')}\`)">📋 कॉपी</button>
+                <button class="icon-btn" onclick="whatsappShare(\`${item.text.replace(/`/g, '')}\`)">📲 शेयर</button>
+              </div>
+              ${isAdmin ? `<button class="delete-btn" onclick="deleteShayari(${item.id})">🗑️ हटाएँ</button>` : ``}
+            </div>
+          </div>
+        </article>
+      `).join("");
+
+      document.getElementById("loadMoreWrap").style.display =
+        visibleCount < filtered.length ? "block" : "none";
+    }
+
+    function selectCategory(cat, btn) {
+      currentCategory = cat;
+      visibleCount = 18;
+      document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      renderShayaris();
+    }
+
+    function resetAndRender() {
+      visibleCount = 18;
+      renderShayaris();
+    }
+
+    function loadMore() {
+      visibleCount += 18;
+      renderShayaris();
+    }
+
+    function likeShayari(id, btn) {
+      const item = shayariList.find(s => s.id === id);
+      if (item && !btn.classList.contains("liked")) {
+        item.likes += 1;
+        btn.classList.add("liked");
+        btn.querySelector("span").innerText = item.likes;
+        saveToStorage();
+      }
+    }
+
+    function copyShayari(text) {
+      const fullText = `${text}\n\n— सावन की कलम से ✍️`;
+      navigator.clipboard.writeText(fullText);
+      showToast("✅ शायरी कॉपी हो गई!");
+    }
+
+    function whatsappShare(text) {
+      const fullText = encodeURIComponent(`${text}\n\n— सावन की कलम से ✍️\nपूरी शायरी पढ़ें: ${window.location.href}`);
+      const waUrl = "https:" + "//wa.me/?text=" + fullText;
+      window.open(waUrl, "_blank");
+    }
+
+    function shareWebsite() {
+      navigator.clipboard.writeText(window.location.href);
+      showToast("🔗 वेबसाइट का लिंक कॉपी हो गया!");
+    }
+
+    function handleAdminAccess() {
+      if (isAdmin) {
+        document.getElementById("adminPanel").scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+      const pass = prompt("🔒 केवल लेखक (Sawan) के लिए:\nअपना एडमिन पासवर्ड दर्ज करें:");
+      if (pass === ADMIN_PASS) {
+        isAdmin = true;
+        document.getElementById("adminPanel").style.display = "block";
+        document.getElementById("adminToggleBtn").innerText = "👑 Admin Active";
+        renderShayaris();
+        showToast("🔓 स्वागत है सावन! एडमिन पैनल खुल गया।");
+      } else if (pass !== null) {
+        alert("❌ गलत पासवर्ड! केवल सावन ही नई शायरी जोड़ सकते हैं।");
+      }
+    }
+
+    function logoutAdmin() {
+      isAdmin = false;
+      document.getElementById("adminPanel").style.display = "none";
+      document.getElementById("adminToggleBtn").innerText = "🔒 Admin";
+      renderShayaris();
+      showToast("🔒 एडमिन लॉगआउट हो गया।");
+    }
+
+    function addShayariByAdmin() {
+      if (!isAdmin) return;
+      const cat = document.getElementById("newCategory").value;
+      const text = document.getElementById("newShayariText").value.trim();
+      if (!text) {
+        alert("कृपया शायरी लिखें!");
+        return;
+      }
+      const newEntry = {
+        id: shayariList.length + 1,
+        cat: cat,
+        likes: 1,
+        text: text
+      };
+      shayariList.unshift(newEntry);
+      saveToStorage();
+      document.getElementById("newShayariText").value = "";
+      renderShayaris();
+      showToast("✨ आपकी नई शायरी पब्लिश हो गई!");
+    }
+
+    function deleteShayari(id) {
+      if (!isAdmin) return;
+      if (confirm("क्या आप वाकई यह शायरी हटाना चाहते हैं?")) {
+        shayariList = shayariList.filter(s => s.id !== id);
+        saveToStorage();
+        renderShayaris();
+        showToast("🗑️ शायरी हटा दी गई।");
+      }
+    }
+
+    function exportUpdatedHTML() {
+      const updatedHTML = document.documentElement.outerHTML.replace(
+        /const defaultShayaris = \[[\s\S]*?\];/,
+        `const defaultShayaris = ${JSON.stringify(shayariList, null, 2)};`
+      );
+      const blob = new Blob(["<!DOCTYPE html>\n" + updatedHTML], { type: "text/html" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "index.html";
+      a.click();
+      showToast("💾 नई index.html डाउनलोड हो गई!");
+    }
+
+    function toggleTheme() {
+      const body = document.body;
+      const btn = document.getElementById("themeBtn");
+      if (body.getAttribute("data-theme") === "light") {
+        body.removeAttribute("data-theme");
+        btn.innerText = "☀️ Light";
+      } else {
+        body.setAttribute("data-theme", "light");
+        btn.innerText = "🌙 Dark";
+      }
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById("toast");
+      t.innerText = msg;
+      t.style.display = "block";
+      setTimeout(() => { t.style.display = "none"; }, 2500);
+    }
+
+    renderShayaris();
+  </script>
+</body>
+</html>
